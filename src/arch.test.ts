@@ -141,10 +141,40 @@ describe('knowledge base', () => {
         kb1.clear()
         expect(kb2.getMaterial('Everlight silvthril')).toBeUndefined()
     })
+
+    test('load from JSON', () => {
+        expect(true).toBeFalsy()
+    })
+})
+
+describe('material storage', () => {
+    test('get materials', () => {
+        expect(true).toBeFalsy()
+    })
+
+    test('add single material', () => {
+        expect(true).toBeFalsy()
+    })
+
+    test('add batch materials', () => {
+        expect(true).toBeFalsy()
+    })
 })
 
 describe('goal', () => {
     beforeEach(setupSaradoministIII)
+
+    test('get artefacts from added artefacts', () => {
+        expect(true).toBeFalsy()
+    })
+
+    test('get artefacts from added collection', () => {
+        expect(true).toBeFalsy()
+    })
+
+    test('get artefacts from added mix', () => {
+        expect(true).toBeFalsy()
+    })
 
     test('get goal materials w/o material storage', () => {
         const goal = new arch.Goal()
@@ -166,7 +196,7 @@ describe('goal', () => {
         const goal = new arch.Goal()
         goal.addCollection('Saradominist III')
 
-        const materials = new arch.MaterialStorage() // Put some materials in here
+        const materials = new arch.MaterialStorage() // TODO Put some materials in here
 
         const materialsNeeded = goal.getMaterialsNeeded(materials)
         expect(materialsNeeded).toEqual([
