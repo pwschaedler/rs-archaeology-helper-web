@@ -4,21 +4,21 @@ module.exports = {
         es2021: true,
     },
     extends: [
-        "eslint:recommended",
-        "prettier",
-        "plugin:@typescript-eslint/recommended",
+        'eslint:recommended',
+        'prettier',
+        'plugin:@typescript-eslint/recommended',
     ],
     overrides: [
         {
             // Define the configuration for `.astro` file.
-            files: ["*.astro"],
+            files: ['*.astro'],
             // Allows Astro components to be parsed.
-            parser: "astro-eslint-parser",
+            parser: 'astro-eslint-parser',
             // Parse the script in `.astro` as TypeScript by adding the following configuration.
             // It's the setting you need when using TypeScript.
             parserOptions: {
-                parser: "@typescript-eslint/parser",
-                extraFileExtensions: [".astro"],
+                parser: '@typescript-eslint/parser',
+                extraFileExtensions: ['.astro'],
             },
             rules: {
                 // override/add rules settings here, such as:
@@ -26,11 +26,11 @@ module.exports = {
             },
         },
     ],
-    parser: "@typescript-eslint/parser",
+    parser: '@typescript-eslint/parser',
     parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
+        ecmaVersion: 'latest',
+        sourceType: 'module',
     },
-    plugins: ["@typescript-eslint"],
+    plugins: ['@typescript-eslint'],
     rules: {},
 };

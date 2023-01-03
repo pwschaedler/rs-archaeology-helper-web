@@ -4,6 +4,8 @@ A small tool written with Astro/TypeScript to help calculate useful quantities f
 
 I'm just doing this for myself as a fun project and to play with Astro and TypeScript.
 
+[Use it yourself here!](https://pwschaedler.github.io/rs-archaeology-helper-web/)
+
 ## Planned Features
 
 * List materials needed to restore an artefact.
